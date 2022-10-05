@@ -11,7 +11,7 @@ module.exports = class Cart {
     // Fetch the previous cart
     fs.readFile(p, (err, fileContent) => {
       let cart = { products: [], totalPrice: 0 };
-      if (!err) {
+      if (!err) { 
         cart = JSON.parse(fileContent);
       }
       // Analyze the cart => Find existing product
